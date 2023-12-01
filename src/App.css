@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  display: flex;
+  justify-content: space-between;
 }
 
 .App-logo {
@@ -7,6 +9,27 @@
   pointer-events: none;
 }
 
+.car {
+  height: 33vh;
+  width: 20vw;
+  position: absolute;
+  bottom: 6vh;
+  right: 41%;
+}
+.road {
+  height: 99.2vh;
+  width: 70vw;
+}
+.play,
+.pause {
+  margin: auto;
+}
+.logo {
+  height: 50px;
+  position: absolute;
+  left: 2vw;
+  top: 0.5vh;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -34,5 +57,64 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.car2 {
+  height: 20vh;
+  width: 20vw;
+  position: absolute;
+  bottom: 12vh;
+  right: 77%;
+}
+
+.car3 {
+  display: flex;
+  gap: 4px;
+  flex-direction: column;
+  position: absolute;
+  top: 1vh;
+  right: 0%;
+}
+
+.btn {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  width: 50%;
+  border-radius: 3px;
+}
+
+.btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.speed {
+  font-size: 30px !important;
+  color: white;
+  padding: 0;
+
+  margin: 0;
+}
+
+.pop-alert {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  color: red;
+  background: #f1f1f1;
+  padding: 12px;
+  border-radius: 8px;
+  transform: translate(-50%, 50%);
+  animation: zoomIn 0.5s ease-in-out;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
   }
 }
